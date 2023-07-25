@@ -9,18 +9,39 @@
     wsl --set-default-version 2
     wsl --install
     ```
-- Atualização: `apt-get update`
-- Git: `sudo apt install git`
-- Curl: `sudo apt-get install curl`
+- Atualização:
+    ```
+    apt-get update
+    ```
+- Git:
+    ```
+    sudo apt install git
+    ```
+- Curl:
+    ```
+    sudo apt-get install curl
+    ```
 - Node:
     ```
     curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
     sudo apt install Node.js
     ```
-- Yarn: `npm install --global yarn`
-- Oh My Zsh: `sudo apt install zsh sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-- Make: `sudo apt install make`
-- NestJs: `npm i -g @nestjs/cli`
+- Yarn:
+    ```
+    npm install --global yarn
+    ```
+- Oh My Zsh:
+    ```
+    sudo apt install zsh sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+- Make:
+    ```
+    sudo apt install make
+    ```
+- NestJs:
+    ```
+    npm i -g @nestjs/cli
+    ```
 - Docker:
     ```
     sudo apt update && sudo apt upgrade
@@ -48,26 +69,72 @@
 - Permissão Docker: `sudo usermod -aG docker $USER`
 
 ### Logs
-- Espaço em disco: `wsl.exe --system -d <distribution-name> df -h /mnt/wslg/distro`
-- Nome da máquina: `uname -a`
-- Recursos: `cat /proc/cpuinfo`
-- Verificar status: `sudo systemctl status <process-name>`
+- Espaço em disco:
+    ```
+    wsl.exe --system -d <distribution-name> df -h /mnt/wslg/distro
+    ```
+- Nome da máquina:
+    ```
+    uname -a
+    ```
+- Recursos:
+    ```
+    cat /proc/cpuinfo
+    ```
+- Verificar status:
+    ```
+    sudo systemctl status <process-name>
+    ```
 
 ### Criação
-- Escrever arquivos: `echo "hello world" > index.html`
-- Criar diretório: `mkdir <dir-name>`
-- Criar arquivo: `touch <file-name>`
-- Acessar diretório: `cd /usr/share/nginx/html/`
-- Acessar arquivo: `cat index.html`
-- Acessar root WSL: `cd /mnt`
+- Escrever arquivos:
+    ```
+    echo "content" > <file-name>
+    ```
+- Criar diretório:
+    ```
+    mkdir <dir-name>
+    ```
+- Criar arquivo:
+    ```
+    touch <file-name>
+    ```
+- Acessar diretório:
+    ```
+    cd <dir-name>
+    ```
+- Acessar arquivo:
+    ```
+    cat <file-name>
+    ```
+- Acessar root WSL:
+    ```
+    cd /mnt
+    ```
 
 ### Execução
-- Rodar docker: `sudo service docker start`
-- Reiniciar WSL: `wsl --shutdown`
+- Rodar docker:
+    ```
+    sudo service docker start
+    ```
+- Reiniciar WSL:
+    ```
+    wsl --shutdown
+    ```
+- Restart:
+    ```
+    systemctl restart <process-name>
+    ```
 
 ### Exclusões
-- Remover arquivo: `rm -f index.html`
-- Remover diretório: `rm -rf node_modules/`
+- Remover arquivo:
+    ```
+    rm -f <file-name>
+    ```
+- Remover diretório:
+    ```
+    rm -rf <dir-name>
+    ```
 
 ### Configurações
 - Limite recurso <C:/Users/<user-name>/.wslconfig>:
